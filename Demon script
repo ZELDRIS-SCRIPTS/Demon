@@ -1960,7 +1960,7 @@ function bd:AddWindow(bi, bj)
                     for bh, aW in pairs(bU) do
                         dy[bh] = function(...)
                             local dw = {aW(...)}
-                            local aZ = dw[#dw]
+                            local aZ = dw[dw]
                             aZ.Parent = cZ
                             return table.unpack(dw)
                         end
